@@ -1,0 +1,13 @@
+// MIXIN CENTRADO
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//MIXIN TRANSICIONES NAVBAR / REDES
+@mixin transicionScale ($valorScale) {
+    transition: all 0.2s ease-in-out;
+    transform: scale($valorScale);
+}
+  

@@ -1,0 +1,153 @@
+// GLOBALES
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// BODY
+body{
+    background-color: white;
+    
+    .centradoTextos {
+      @include centrado;
+    }
+}
+  
+// HEADER
+header {
+    background-color: black;
+    position: sticky;
+    z-index: 9999;
+    top: 0px;
+    font-family: "NeueHaasDisplayBold";
+    
+    //NAVEGACIÓN
+    nav {
+      #navbarNav {
+        justify-content: center;
+      }
+      .colornavbar {
+          background-color: black;
+      }
+    
+      ul {
+          list-style-type: none; /*le saca todos los estilos por defecto y lo deja plano*/ 
+      }
+  
+      a {
+          text-decoration: none; /*para sacar el subrayado del enlace*/
+          color: white;
+      }
+      
+      li:hover{
+        .navbarTransicion{
+          @include transicionScale(1.1);
+        }
+      }
+       
+    }
+    
+}
+  
+// MAIN
+main {
+    h1 {
+      font-family: "Ambroise-Francois-Bold";
+    }
+  
+    h2 {
+        font-family: "Ambroise-Francois-Bold";
+    }
+  
+    h5 {
+        font-family: "NeueHaasDisplayRoman"
+    }
+  
+    p {
+        font-family: "NeueHaasDisplayLight";
+    }
+
+    form {
+        font-family: "NeueHaasDisplayLight";
+    }
+    
+    // RESPONSIVE
+    // TAMAÑO PARRAFOS
+  
+    @media (min-width: 320px) and (max-width: 444px) {
+      p {
+          font-size: 15px;
+      }
+    }
+  
+    @media (min-width: 445px) and (max-width: 1200px) {
+      p {
+          font-size: 16px;
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      p {
+          font-size: 20px;
+      }
+    }
+  
+    // TAMAÑO TITULO SUBPAGINAS
+  
+    @media (min-width: 320px) and (max-width: 444px) {
+      .tituloSubpagina h1 {
+          font-size: 70px;
+      }
+    }
+  
+    @media (min-width: 445px) and (max-width: 1200px) {
+      .tituloSubpagina h1 {
+          font-size: 85px;
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      .tituloSubpagina h1 {
+          font-size: 130px;
+      }
+    }
+  
+    // TAMAÑO SUBTITULOS
+    @media (min-width: 320px) and (max-width: 444px) {
+      h2 {
+          font-size: 50px;
+      }
+    }
+  
+    @media (min-width: 445px) and (max-width: 1200px) {
+      h2 {
+          font-size: 60px;
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      h2 {
+          font-size: 100px;
+      }
+    }
+}
+  
+// FOOTER
+footer {
+    font-family: "NeueHaasDisplayLight";
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  
+    .redesMargen{
+      margin: 5px;
+    }
+    // TRANSICIÓN REDES
+    a:hover{
+      .redesTransicion{
+        @include transicionScale(1.5);
+      }
+    }
+    
+}

@@ -1,0 +1,18 @@
+// ESTILOS INDEX
+@media (min-width: 320px) and (max-width: 444px) {
+    .centradoTextos h1 {
+        font-size: 70px;
+    }
+}
+  
+@media (min-width: 445px) and (max-width: 1200px) {
+    .centradoTextos h1 {
+        font-size: 85px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .centradoTextos h1 {
+        font-size: 130px;
+    }
+}

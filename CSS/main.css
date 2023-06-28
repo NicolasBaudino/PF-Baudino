@@ -65,6 +65,9 @@ main h5 {
 main p {
   font-family: "NeueHaasDisplayLight";
 }
+main form {
+  font-family: "NeueHaasDisplayLight";
+}
 @media (min-width: 320px) and (max-width: 444px) {
   main p {
     font-size: 15px;
@@ -147,8 +150,4 @@ footer a:hover .redesTransicion {
   align-items: center;
 }
 
-form {
-  font-family: "NeueHaasDisplayLight";
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
